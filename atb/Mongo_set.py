@@ -20,7 +20,7 @@ def GetData():
 
 if __name__ == '__main__':
     Client = pymongo.MongoClient()
-    conn = MySQLdb.connect('101.201.70.139','root','Myjr678!@#','ant',charset='utf8')
+    conn = MySQLdb.connect('ip','user','pwd','ant',charset='utf8')
     cur = conn.cursor()
     DB = Client['zhizaoDB']
     TB = DB['zhizaoTB']
